@@ -31,7 +31,7 @@ This model describes Rabi oscillations, detuning effects, and the evolution of t
 - **spin.pdf**  
   *Detailed analytic derivation of Bloch vector expectation values and Rabi oscillations. Covers laboratory and rotating frames, operator definitions, and transformation formulas.*
 
-- **part_a.py, part_b.py, ...**  
+- **blochvector**  
   *Python scripts for simulation and visualization:*  
     - Numerical solution of the time-dependent Schrödinger equation for a two-level system  
     - Simulation and plotting of ⟨Sₓ(t)⟩, ⟨Sᵧ(t)⟩, ⟨S_z(t)⟩, and optionally 3D Bloch sphere animation  
@@ -42,7 +42,4 @@ This model describes Rabi oscillations, detuning effects, and the evolution of t
 
 ---
 
-## Analytical Results
-
-Key results for the expectation values (see `spin.pdf` for full derivation):
 
