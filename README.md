@@ -1,45 +1,59 @@
-# Bloch Vector Dynamics and Rabi Oscillations for a Spin-1/2 System
+# 🟩 Bloch Vector Dynamics & Rabi Oscillations for Spin-1/2 System
 
-## Overview
-
-This repository provides a comprehensive toolkit for the **analytic derivation, numerical simulation, and visualization** of the quantum dynamics of a single spin-1/2 particle (two-level system) in a static magnetic field with a resonant or detuned RF field.  
-The package is useful for students and researchers in quantum mechanics, NMR/EPR, quantum optics, and related areas.
-
-**Features:**
-- Self-contained analytical derivation of time-dependent expectation values ⟨Sₓ(t)⟩, ⟨Sᵧ(t)⟩, ⟨S_z(t)⟩ (`spin.pdf`)
-- Ready-to-run Python scripts for simulation and visualization of Bloch vector dynamics under various conditions
-- (Optional) Jupyter notebook for interactive exploration
+A modern toolkit for **analytic derivation**, **numerical simulation**, and **visualization** of the quantum dynamics of a single spin-1/2 particle (two-level system) in a static magnetic field with a resonant or detuned RF field.  
+This package is ideal for students and researchers in quantum mechanics, NMR/EPR, quantum optics, and quantum information science.
 
 ---
 
-## Physical Model
+## 🌟 Project Highlights
 
-The quantum Hamiltonian for a spin-1/2 in a static and RF field:
-
-where:
-- **ω₀**: Larmor frequency (proportional to static field B_z)
-- **ω**: RF drive frequency
-- **g**: RF coupling (proportional to RF field amplitude B₁)
-- **σ_x, σ_y, σ_z**: Pauli matrices
-
-This model describes Rabi oscillations, detuning effects, and the evolution of the Bloch vector.
+- **Self-contained analytical derivation:**  
+  Step-by-step calculation of the time-dependent expectation values $\langle S_x(t) \rangle$, $\langle S_y(t) \rangle$, $\langle S_z(t) \rangle$ for a spin-1/2 in combined static and RF magnetic fields, including *lab frame* and *rotating frame* analysis.
+- **Python simulation code:**  
+  Ready-to-run Python scripts for simulating and plotting the Bloch vector trajectory, Rabi oscillations, detuning, and more.
+- **Interactive notebook:**  
+  (Optional) Jupyter notebook for parameter sweeps and real-time visualization on the Bloch sphere.
 
 ---
 
-## Repository Contents
+## 🧑‍🔬 Physical Model
 
-- **spin.pdf**  
-  *Detailed analytic derivation of Bloch vector expectation values and Rabi oscillations. Covers laboratory and rotating frames, operator definitions, and transformation formulas.*
+The quantum Hamiltonian for a spin-1/2 in static and RF fields:
 
-- **blochvector**  
-  *Python scripts for simulation and visualization:*  
-    - Numerical solution of the time-dependent Schrödinger equation for a two-level system  
-    - Simulation and plotting of ⟨Sₓ(t)⟩, ⟨Sᵧ(t)⟩, ⟨S_z(t)⟩, and optionally 3D Bloch sphere animation  
-    - Easily customizable parameters for field strengths, detuning, and initial states
+$$
+\hat{H} = \frac{\hbar}{2}\left[\omega_0 \sigma_z + g\left(\sigma_x \cos\omega t + \sigma_y \sin\omega t\right)\right]
+$$
 
-- **blochvector.ipynb** (optional)  
-  *Jupyter notebook for interactive visualization and parameter exploration.*
+- **$\omega_0$**: Larmor frequency (proportional to static field $B_z$)
+- **$\omega$**: RF drive frequency
+- **$g$**: RF coupling (proportional to RF field amplitude $B_1$)
+- **$\sigma_x, \sigma_y, \sigma_z$**: Pauli matrices
+
+This model describes Rabi oscillations, detuning, and the evolution of the Bloch vector.
 
 ---
 
+## 📁 Repository Contents
 
+| File / Folder         | Description                                                                                        |
+|-----------------------|----------------------------------------------------------------------------------------------------|
+| `spin.pdf`            | Full analytic derivation (clean and typeset): time evolution, expectation values, Rabi oscillations |
+| `spin_2.pdf`          | Supplementary handwritten theoretical notes and preliminary proofs                                  |
+| `blochvector`         | Python scripts for simulation and visualization (trajectory, Bloch vector, Rabi oscillations)       |
+| `blochvector.ipynb`   | (Optional) Jupyter notebook for interactive visualization and parameter exploration                |
+
+---
+
+## 🚀 How to Run
+
+1. **Review the theory:**  
+   - Open `spin.pdf` for detailed analytic derivations  
+   - See `spin_2.pdf` for hand-written preliminary notes
+
+2. **Run the simulation code:**  
+   - Use the scripts in `blochvector/` to reproduce Bloch vector and Rabi oscillation plots  
+   - Or use the notebook for interactive demos
+
+   ```bash
+   pip install numpy matplotlib jupyter
+   # Run Python scripts or open the notebook in JupyterLab/Notebook
