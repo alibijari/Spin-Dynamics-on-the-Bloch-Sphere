@@ -47,12 +47,10 @@ This model describes Rabi oscillations, detuning, and the evolution of the Bloch
 
 1. **Review the theory:**  
    - Open `spin.pdf` for detailed analytic derivations  
-   - See `spin_2.pdf` for hand-written preliminary notes
+   - See `spin_2.pdf` for hand-written notes
 
-2. **Run the simulation code:**  
-   - Use the scripts in `blochvector/` to reproduce Bloch vector and Rabi oscillation plots  
-   - Or use the notebook for interactive demos
-
+2. **Run the simulation code:**
+3. 
    ```bash
    pip install numpy matplotlib jupyter
    # Run Python scripts or open the notebook in JupyterLab/Notebook
