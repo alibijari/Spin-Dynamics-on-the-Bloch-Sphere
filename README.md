@@ -1,4 +1,4 @@
-# 🟩 Bloch Vector Dynamics & Rabi Oscillations for Spin-1/2 System
+# 🌀 Bloch Vector Dynamics & Rabi Oscillations for Spin-1/2 System
 
 A modern toolkit for **analytic derivation**, **numerical simulation**, and **visualization** of the quantum dynamics of a single spin-1/2 particle (two-level system) in a static magnetic field with a resonant or detuned RF field.  
 This package is ideal for students and researchers in quantum mechanics, NMR/EPR, quantum optics, and quantum information science.
