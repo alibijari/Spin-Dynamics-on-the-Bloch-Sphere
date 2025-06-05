@@ -39,7 +39,6 @@ This model describes Rabi oscillations, detuning, and the evolution of the Bloch
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | `spin.pdf`            | Full analytic derivation (clean and typeset): time evolution, expectation values, Rabi oscillations |
 | `spin_2.pdf`          | Supplementary handwritten theoretical notes and preliminary proofs                                  |
-| `blochvector`         | Python scripts for simulation and visualization (trajectory, Bloch vector, Rabi oscillations)       |
 | `blochvector.ipynb`   | (Optional) Jupyter notebook for interactive visualization and parameter exploration                |
 
 ---
